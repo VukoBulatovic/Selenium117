@@ -56,7 +56,7 @@ public class Selenium13 {
         WebElement submitButton = driver.findElement(By.id("submit"));
 
         username.clear();
-        username.sendKeys("000");
+        username.sendKeys("1234");
         password.clear();
         password.sendKeys("Password123");
         submitButton.click();
@@ -70,7 +70,6 @@ public class Selenium13 {
             System.out.println("Element not fount");
         }
         Assert.assertFalse(logOut);
-
 
     }
 
