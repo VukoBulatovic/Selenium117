@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class ZadatakPetak1 {
 
@@ -15,7 +16,16 @@ public class ZadatakPetak1 {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.navigate().to("https://practicetestautomation.com/");
     }
+
+    @Test
+    public void verifyThatUserCanNotLogInUsingEmptyInputField(){
+
+    }
+
+
+
 
 
 
